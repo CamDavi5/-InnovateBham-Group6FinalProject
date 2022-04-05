@@ -1,17 +1,21 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
+import Profile from "./pages/Profile.jsx";
+import Categories from "./pages/Categories.jsx";
+import ItemsDetails from "./pages/ItemsDetails";
 
 const App = () => {
     return (
-        <>
-        <h1>Hello World</h1>
-        </>
-        // <BrowserRouter>
-        //     <Routes>
-        //         <Route path="/" element={<Home />} />
-        //     </Routes>
-        // </BrowserRouter>
+       
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/Profile" element={<Profile />} />
+                <Route path="/Categories" element={<Categories />} />
+                <Route path="/ItemsDetails" element={<ItemsDetails />} />
+            </Routes>
+        </BrowserRouter>
     )
 };
 
