@@ -6,7 +6,7 @@ import Home from "./pages/Home.jsx";
 import Profile from "./pages/Profile.jsx";
 import Login from "./pages/Login.jsx";
 import Categories from "./pages/Categories.jsx";
-import ItemsDetails from "./pages/ItemsDetails.jsx";
+import ItemsDetails from "./pages/Details.jsx";
 
 const App = () => {
   return (
