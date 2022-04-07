@@ -1,15 +1,15 @@
 import React from 'react';
 
-const ItemsDetails = () => {
+const Profile = () => {
     return (
         <>
             <div className="container text-center">
                 <div className="row">
-                    Items Details Page
+                    Profile Page
                 </div>
             </div>
         </>
     );
 }
 
-export default ItemsDetails;
+export default Profile;
