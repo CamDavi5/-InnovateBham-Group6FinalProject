@@ -6,9 +6,6 @@ import saveditemsRouter from "./saveditems";
 import suggestRouter from "./suggest";
 import userRouter from "./users";
 
-
-
-
 //localhost:3000/api/saveditems
 router.use("/saveditems", saveditemsRouter);
 //localhost:3000/api/suggestions
