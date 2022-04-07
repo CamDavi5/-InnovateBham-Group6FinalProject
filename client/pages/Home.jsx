@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState } from "react";
 
-const Home = () => {
-    return (
-        <>
-            <div className="container text-center">
-                <div className="row">
-                    Home Page
-                </div>
-            </div>
-        </>
-    );
+
+function Home() {
+  return (
+
+      <div className="container">
+        <h1>Home</h1>
+      </div>
+
+  );
 }
 
 export default Home;
