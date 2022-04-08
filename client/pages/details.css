@@ -1,3 +1,16 @@
-container2 {
-  margin-bottom: 0px;
+.container2 {
+  left: 715px;
+  bottom: 52px;
+  position: absolute;
+  
+}
+.container {
+  bottom: 450;
+  left: 675px;
+  position: absolute;
+  
+}
+.detailCard{
+ border: 1px solid transparent;
+ border-radius: 200px;
 }
