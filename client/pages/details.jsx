@@ -10,6 +10,7 @@ const Details = () => {
                 <div>
                     <div id='detailCard' className="jumbotron">
                         <h1 className="display-4">Lorem Ipsum</h1>
+                        <h1>test</h1>
                         <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quis facilis error ipsam placeat labore, aperiam quia.</p>
                         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
                         <p className="lead">
