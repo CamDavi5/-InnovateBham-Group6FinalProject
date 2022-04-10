@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Login() {
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [users, setUsers] = useState([]);
 
-  // User Login info
+  /*// User Login info
   const database = [
     {
       username: "user1",
@@ -14,20 +15,27 @@ function Login() {
       username: "user2",
       password: "pass2",
     },
-  ];
+  ];*/
 
   const errors = {
     uname: "invalid username",
     pass: "invalid password",
   };
 
+  useEffect(() => {
+    fetchUsers();
+  }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
     var { uname, pass } = document.forms[0];
 
+    fetchUsers();
+    //console.log(users);
+
     // Find user login info
-    const userData = database.find((user) => user.username === uname.value);
+    const userData = users.find((user) => user.username === uname.value);
 
     // Compare user info
     if (userData) {
@@ -42,6 +50,17 @@ function Login() {
       setErrorMessages({ name: "uname", message: errors.uname });
     }
   };
+
+  const fetchUsers = () => {
+    fetch('http://localhost:3000/api/user')
+      .then(response => {
+        console.log(response);
+        return response.json();
+      })
+      .then(allUsers => {
+        setUsers(allUsers);
+      });
+  }
 
   // Generate error message
   const renderErrorMessage = (name) =>
