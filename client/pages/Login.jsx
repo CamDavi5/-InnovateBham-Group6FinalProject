@@ -5,8 +5,8 @@ function Login() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [users, setUsers] = useState([]);
 
-  // User Login info
-  /*const database = [
+  /*// User Login info
+  const database = [
     {
       username: "user1",
       password: "pass1",
@@ -32,7 +32,7 @@ function Login() {
     var { uname, pass } = document.forms[0];
 
     fetchUsers();
-    console.log(users);
+    //console.log(users);
 
     // Find user login info
     const userData = users.find((user) => user.username === uname.value);
@@ -58,7 +58,6 @@ function Login() {
         return response.json();
       })
       .then(allUsers => {
-        //console.log(allChirps[0]);
         setUsers(allUsers);
       });
   }
@@ -71,7 +70,8 @@ function Login() {
 
   // code for login form
   const renderForm = (
-    <div className="form-container">
+    <div className="main-container">
+    <div className="absolute form-container">
       <div className="title">Log In</div>
       <form onSubmit={handleSubmit}>
         <div className="input-container">
@@ -86,6 +86,7 @@ function Login() {
           <input type="submit" />
         </div>
       </form>
+    </div>
     </div>
   );
 
