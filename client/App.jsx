@@ -6,7 +6,7 @@ import Home from "./pages/Home.jsx";
 import Profile from "./pages/Profile.jsx";
 import Login from "./pages/Login.jsx";
 import Categories from "./pages/Categories.jsx";
-import Details from "./pages/Details.jsx";
+import details from "./pages/details.jsx";
 import Team from "./pages/Team.jsx";
 
 
@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/Login" element={<Login />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Categories" element={<Categories />} />
-          <Route path="/Details" element={<Details />} />
+          <Route path="/details" element={<details />} />
           <Route path="/Team" element={<Team />} />
         </Routes>
     </BrowserRouter>
