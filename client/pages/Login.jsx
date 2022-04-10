@@ -51,7 +51,8 @@ function Login() {
 
   // code for login form
   const renderForm = (
-    <div className="form-container">
+    <div className="main-container">
+    <div className="absolute form-container">
       <div className="title">Log In</div>
       <form onSubmit={handleSubmit}>
         <div className="input-container">
@@ -66,6 +67,7 @@ function Login() {
           <input type="submit" />
         </div>
       </form>
+    </div>
     </div>
   );
 
