@@ -1,10 +1,7 @@
-// This is an example of what would go in this file. Feel free to delete/overwrite these contents and rename the file. Remember to make a seperate file for each database table!
-
-
 import * as express from "express";
 const router = express.Router();
 
-import db from "../db";
+import db from "../db/usersdb";
 
 // REST API
 router.get("/:id?", async (req, res) => {
@@ -12,11 +9,11 @@ router.get("/:id?", async (req, res) => {
         const id = req.params.id;
 
         if (id) {
-            const chirp = await db.chirps.one(id);
-            res.json(chirp);
+            const user = await db.one(id);
+            res.json(user);
         } else {
-            const chirps = await db.chirps.all();
-            res.json(chirps);
+            const users = await db.all();
+            res.json(users);
         }
     } catch (error) {
         console.log(error);
@@ -28,8 +25,8 @@ router.post("/", async (req, res) => {
     try {
         const body = req.body;
 
-        const dbRes = await db.chirps.insert(body.userid, body.content, body.location);
-        res.status(200).json(dbRes);
+        const dbCreate = await db.insert(body.username, body.password, body.birthdate,body.email);
+        res.status(200).json(dbCreate);
     } catch (error) {
         console.log(error)
     }
@@ -40,23 +37,23 @@ router.delete("/:id", async (req, res) => {
     try {
         const id = req.params.id;
 
-        const dbRes = await db.chirps.destroy(id);
+        const dbDelete = await db.remove(id);
 
-        res.status(200).json(dbRes);
+        res.status(200).json(dbDelete);
     } catch (error) {
         console.log(error);
     }
 });
 
-// Update
+//Update
 router.put("/:id", async (req, res) => {
     try {
         const id = req.params.id;
-        const content = req.body.content;
+        const body  = req.body;
 
-        const dbRes = await db.chirps.edit(id, content);
+        const dbUpdate = await db.update(body.username,body.password,body.email,id);
 
-        res.status(200).json(dbRes);
+        res.status(200).json(dbUpdate);
     } catch (error) {
         console.log(error)
     }
