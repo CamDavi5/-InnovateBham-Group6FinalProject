@@ -4,24 +4,25 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="menu">
+<div className="menu">
         <nav>
+          <h1 className="navbar-title">Recall.it</h1>
           <ul>
             <li>
-            <Link to="/" id="navlink">Home</Link>
+            <Link to="/" className="tabs" id="navlink">Home</Link>
             </li>
             <li>
-            <Link to="/Login" id="navlink">Login</Link>
+            <Link to="/Profile" className="tabs" id="navlink">Profile</Link>
             </li>
             <li>
-            <Link to="/Profile" id="navlink">Profile</Link>
+            <Link to="/Categories" className="tabs" id="navlink">Categories</Link>
             </li>
             <li>
-            <Link to="/Categories" id="navlink">Categories</Link>
+            <Link to="/Login" className="login-tab" id="login-navlink">Login</Link>
             </li>
           </ul>
         </nav>
-      </div>
+      </div> 
     </>
   );
 };
