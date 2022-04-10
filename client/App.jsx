@@ -6,7 +6,10 @@ import Home from "./pages/Home.jsx";
 import Profile from "./pages/Profile.jsx";
 import Login from "./pages/Login.jsx";
 import Categories from "./pages/Categories.jsx";
-import ItemsDetails from "./pages/Details.jsx";
+import Details from "./pages/Details.jsx";
+import Team from "./pages/Team.jsx";
+
+
 
 const App = () => {
   return (
@@ -17,7 +20,8 @@ const App = () => {
           <Route path="/Login" element={<Login />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Categories" element={<Categories />} />
-          <Route path="/ItemsDetails" element={<ItemsDetails />} />
+          <Route path="/Details" element={<Details />} />
+          <Route path="/Team" element={<Team />} />
         </Routes>
     </BrowserRouter>
   );
