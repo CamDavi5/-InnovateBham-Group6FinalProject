@@ -273,3 +273,61 @@ padding-top: 100px;
   width: 400px;
   height: 200px;
 }
+
+
+/*Nathan Item Details*/
+/*.container2 {
+  left: 700px;
+  bottom: 100px;
+  position: absolute;
+
+}
+
+.container1 {
+  bottom: 300;
+  left: 660px;
+  position: absolute;
+}
+
+.container3 {
+ position: absolute;
+ left: 697px;
+ bottom: 467;
+}
+
+.container4{
+  position: absolute;
+  bottom: 700;
+  left: 697px;
+}
+#detailCard {
+  margin-bottom: 1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid transparent;
+  border-radius: 1em;
+}
+#detailCard2{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid transparent;
+  border-radius: 1em;
+}
+#detailCard3{
+  border: 1px solid transparent ;
+  border-radius: 1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#detailCard4{
+  border-radius: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 300px;
+  height: 300px;
+}
+.product{
+  position: absolute;
+  bottom: 725;
+  left: 1010px;
+}*/
