@@ -71,7 +71,7 @@ function Login() {
   // code for login form
   const renderForm = (
     <div className="main-container">
-    <div className="absolute form-container">
+    <div className="form-container">
       <div className="title">Log In</div>
       <form onSubmit={handleSubmit}>
         <div className="input-container">
@@ -83,7 +83,7 @@ function Login() {
           {renderErrorMessage("pass")}
         </div>
         <div className="button-container">
-          <input type="submit" />
+        <button type="submit" value="Submit" className="btn btn-info btn-lg">Submit</button>
         </div>
       </form>
     </div>
@@ -95,9 +95,6 @@ function Login() {
       <div className="login-form">
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
-      {/* <div>
-        <img id="img" src={"../assets/letssee.jpg"} />
-      </div> */}
     </div>
   );
 }
