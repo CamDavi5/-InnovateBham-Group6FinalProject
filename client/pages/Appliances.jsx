@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Appliances() {
     const [applianceArr, setApplianceList] = useState([]);
     const [loadingBool, setLoadingBool] = useState(false);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('https://www.saferproducts.gov/RestWebServices/Recall?format=json&RecallDescription=appliance')
@@ -17,7 +20,7 @@ function Appliances() {
     }, []);
 
     const toDetails = (recallid) => {
-        console.log("Not done yet!");
+        navigate(`/Categories/Appliances/${recallid}`);
     }
 
     return (
@@ -36,7 +39,7 @@ function Appliances() {
                         </div>
                     </div>
                 ))}
-            </div>
+                </div>
             }
         </>
     );

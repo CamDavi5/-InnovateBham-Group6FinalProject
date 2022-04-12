@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/Profile/:id" element={<Profile />} />
           <Route path="/Categories" element={<Categories />} />
           <Route path="/Categories/Appliances" element={<Appliances />} />
-          <Route path="/Details" element={<Details />} />
+          <Route path="/Categories/:typeofcat/:itemid" element={<Details />} />
           <Route path="/Team" element={<Team />} />
         </Routes>
     </BrowserRouter>
