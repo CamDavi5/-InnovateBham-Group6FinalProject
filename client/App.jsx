@@ -9,6 +9,8 @@ import Categories from "./pages/Categories.jsx";
 import Details from "./pages/details.jsx";
 import Team from "./pages/Team.jsx";
 import Appliances from "./pages/Appliances.jsx"
+import Contactus from "./pages/Contactus.jsx";
+
 
 
 
@@ -25,6 +27,7 @@ const App = () => {
           <Route path="/Categories/Appliances" element={<Appliances />} />
           <Route path="/Categories/:typeofcat/:itemid" element={<Details />} />
           <Route path="/Team" element={<Team />} />
+          <Route path="/Contactus" element={<Contactus />} />
         </Routes>
     </BrowserRouter>
   );
