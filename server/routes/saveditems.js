@@ -9,7 +9,7 @@ router.get("/:id?", async (req, res) => {
         const id = req.params.id;
 
         if (id) {
-            const saveditem = await db.one(id);
+            const saveditem = await db.oneuser(id);
             res.json(saveditem);
         } else {
             const saveditems = await db.all();
@@ -35,7 +35,7 @@ router.post("/", async (req, res) => {
 // Delete
 router.delete("/:id", async (req, res) => {
     try {
-        const id = req.params.id;
+        const id = req.params.userid;
 
         const dbDelete = await db.remove(id);
 
