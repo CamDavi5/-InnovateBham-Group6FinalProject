@@ -6,8 +6,9 @@ import Home from "./pages/Home.jsx";
 import Profile from "./pages/Profile.jsx";
 import Login from "./pages/Login.jsx";
 import Categories from "./pages/Categories.jsx";
-import Details from "./pages/Details.jsx";
+import Details from "./pages/details.jsx";
 import Team from "./pages/Team.jsx";
+import Appliances from "./pages/Appliances.jsx"
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Profile/:id" element={<Profile />} />
           <Route path="/Categories" element={<Categories />} />
+          <Route path="/Categories/Appliances" element={<Appliances />} />
           <Route path="/Details" element={<Details />} />
           <Route path="/Team" element={<Team />} />
         </Routes>
