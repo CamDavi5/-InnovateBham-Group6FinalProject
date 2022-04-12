@@ -17,6 +17,17 @@ div.absolute {
   bottom: 0px;
 }
 
+div.relative {
+  position: absolute;
+  background-image: url("../assets/bg2.gif");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  left: 0px;
+  right: 0px;
+  top: 85px;
+  bottom: 0px;
+}
 
 
 
@@ -37,6 +48,8 @@ div.absolute {
 }
 
 #navlink {
+  margin-left: 70px;
+  margin-right: 20px;
     font-size: 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -50,19 +63,18 @@ div.absolute {
 
 ul {
   display: inline;
-  /* text-transform: uppercase; */
   list-style-type: none;
 }
 
 li{ 
   display: inline;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .menu {
   position: absolute;
-  height: 14.5vh;
-  width: 100vw;
+  height: 14vh;
+  width: 100%;
   /* box-shadow: 1px 0 2px rgba(0,0,0,.2); */
 }  
 
@@ -83,8 +95,7 @@ li{
   }
 
   .login-tab {
-    margin-right: 0px;
-    margin-left: 350px;
+    margin-left: 100px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -93,36 +104,49 @@ li{
 
 /* Login Page */
 
+.newuser-container {
+  width: 525px;
+  height: 375px;
+  position: absolute;
+  background-color: #fff;
+  margin-top: 110px;
+  margin-left: 175px;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.418);
+}
+
+.input-group {
+  margin-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 .form-container {
-  /* background-image: url("../assets/loginbg.jpg");
-  background-size: cover; */
   position: absolute;
   background-color: #ffffff;
   width: 300px;
   height: 300px;
   margin-top: 150px;
-  margin-left: 500px;
+  margin-left: 875px;
   margin-bottom: 10px;
   border-radius: 1.5em;
   box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.418);
 }
 
-/* .main-container {
-  /* background-image: url("../assets/loginbg.jpg");
-  background-size: cover; */
-/* } */
 
 .title {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   color: #6c328b;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 .button-container {
-  margin-top: 10px;
+  margin-top: 40px;
   display: flex;  
   justify-content: center;  
   align-items: center; 
@@ -130,14 +154,18 @@ li{
   border-radius: 25px;
 }
 
-.input-container {
-  margin: 5px;
+.button2-container {
+  margin-top: 20px;
   display: flex;  
   justify-content: center;  
   align-items: center; 
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 25px;
 }
-
-
+.input-container {
+  margin-left: 45px;
+  margin-bottom: 10px;
+}
 
 
 
@@ -210,23 +238,22 @@ h6 {
   font-size: 14px
 }
 
-
-/* .padding {
-  padding-top: 20px;
-  padding-top: 20px;
-} */
+.page-container {
+  padding-top: 60px;
+}
 
 
 .user-card-full {
   overflow: hidden;
+  margin-top: 100px;;
   padding-top: 0px;
   width: 100%;
   border-radius: 5px 0 0 5px;
 }
 
-.row  {
-padding-top: 100px;
-}
+/* .row  {
+margin-top: 0px;
+} */
 
 
 .bg-c-lite-green {
@@ -234,7 +261,7 @@ padding-top: 100px;
 }
 
 .user-profile {
-  padding: 20px 0;
+  padding-top: 0;
   border-radius: 5px 0 0 5px;
 }
 
@@ -242,11 +269,11 @@ padding-top: 100px;
   padding: 1.25rem;
 } */
 
-.card-block p {
+p.card-block  {
   line-height: 25px
 }
 
-.card p {
+p.card  {
   line-height: 25px
 }
 
@@ -263,18 +290,108 @@ padding-top: 100px;
 
 /* Team Page */
 
-.team-container {
+
+div.team-container {
+  position: fixed;
+  background-image: url("../assets/teambg2.gif");
+  background-size: cover; 
   margin: 0px;
-  padding: 0px;
-  background-color: #6c328b;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 20px;
+  left: 0px;
+  right: 0px;
+  top: 85px;
+  bottom: 0px;
 }
 
-.card-pic {
+
+/* div.second-row  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 15px;
+  } */
+
+  div.first-row  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:200px;
+margin-top: 50px;
+    }
+  
+
+h1.team-title {
+  margin-left: 170px;
+  margin-right: 300px;
   width: 400px;
+  height: 50px;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+}
+
+#icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#icon:hover {
+  box-shadow: 0px 11px 45px 2px rgba(48, 69, 255, 0.548);
+}
+
+.card-img-top{
+  width: 80px;
+  height: 150px;
+}
+
+.col-4 {
+  width: 150px;
   height: 200px;
 }
 
-/*Nathan Item Detials*/
+/* Contact us page */
+
+.words {
+  margin-top: 10px;
+}
+.words2 {
+  padding-top: 40px;
+}
+
+.addy {
+  padding-top: 30px;
+}
+span:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.words:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.contact-page-container {
+  color: white;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-image: url("../assets/contact.gif");
+  background-size: cover; 
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.418);
+  border: none;
+  border-radius: 20%;
+  padding: 20px;
+  margin-left: 480px;
+  margin-top: 150px;
+}
+
+
+/*Nathan Item Details*/
 /*.container2 {
   left: 700px;
   bottom: 100px;
@@ -330,3 +447,22 @@ padding-top: 100px;
   bottom: 725;
   left: 1010px;
 }*/
+
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
