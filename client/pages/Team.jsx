@@ -3,55 +3,66 @@ import React from "react";
 const Team = () => {
   return (
     <>
-    <div className="row">
-  <div className="col-md-4 text-center">
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">Cameron Davis</h5>
-        <p className="card-text">Software Developer</p>
-        <p className="card-text text-muted">Backend</p>
+      <div className="team-container">
+        <h1 className="team-title">Meet Our Team </h1>
+        <div className="first-row">
+          <div className="col-4 text-center">
+            <div className="card">
+              <img src="../assets/C.JPG" className="card-img-top" />
+              <div className="card-body">
+                <h5 className="card-title">Cameron Davis</h5>
+                <p className="card-text">Software Developer</p>
+                <p className="card-text text-muted">Backend</p>
+                <img src="../assets/emailicon.png" id="icon" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="col-4 text-center">
+            <div className="card">
+              <img src="../assets/N.JPG" className="card-img-top" />
+              <div className="card-body">
+                <h5 className="card-title">Nathan Harris</h5>
+                <p className="card-text">Software Developer</p>
+                <p className="card-text text-muted">Frontend</p>
+                <img src="../assets/emailicon.png" id="icon" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="col-4 text-center">
+            <div className="card">
+              <img src="../assets/S.JPG" className="card-img-top" />
+              <div className="card-body">
+                <h5 className="card-title">Sophie Engobor</h5>
+                <p className="card-text">Software Developer</p>
+                <p className="card-text text-muted">Frontend</p>
+                 <img src="../assets/emailicon.png" id="icon" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="col-4 text-center">
+            <div className="card">
+              <img src="../assets/T.JPG" className="card-img-top" />
+              <div className="card-body">
+                <h5 className="card-title">Theodore Harris</h5>
+                <p className="card-text">Software Developer</p>
+                <p className="card-text text-muted">Frontend</p>
+                <img src="../assets/emailicon.png" id="icon" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="col-4 text-center">
+            <div className="card">
+              <img src="../assets/Q.JPG" className="card-img-top" />
+              <div className="card-body">
+                <h5 className="card-title">Quinton Parks</h5>
+                <p className="card-text">Software Developer</p>
+                <p className="card-text text-muted">Backend</p>
+                <img src="../assets/emailicon.png" id="icon" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div className="col-md-4 text-center">
-    <div className="card">
-      <div className="card-body">
-      <h5 className="card-title">Nathan Harris</h5>
-        <p className="card-text">Software Developer</p>
-        <p className="card-text text-muted">Frontend</p>
-      </div>
-    </div>
-  </div>
-  <div className="col-md-4 text-center">
-    <div className="card">
-      <div className="card-body">
-      <h5 className="card-title">Sophie Engobor</h5>
-        <p className="card-text">Software Developer</p>
-        <p className="card-text text-muted">Frontend</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div className="row">
-  <div className="col-md-4 text-center">
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">Theodore Harris</h5>
-        <p className="card-text">Software Developer</p>
-        <p className="card-text text-muted">Frontend</p>
-      </div>
-    </div>
-  </div>
-  <div className="col-md-4 text-center">
-    <div className="card">
-      <div className="card-body">
-      <h5 className="card-title">Quinton Parks</h5>
-        <p className="card-text">Software Developer</p>
-        <p className="card-text text-muted">Backend</p>
-      </div>
-    </div>
-  </div>
-</div>
     </>
   );
 };

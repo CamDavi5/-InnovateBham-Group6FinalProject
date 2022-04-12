@@ -52,15 +52,15 @@ function Login() {
   };
 
   const fetchUsers = () => {
-    fetch('http://localhost:3000/api/user')
-      .then(response => {
+    fetch("http://localhost:3000/api/user")
+      .then((response) => {
         console.log(response);
         return response.json();
       })
-      .then(allUsers => {
+      .then((allUsers) => {
         setUsers(allUsers);
       });
-  }
+  };
 
   // Generate error message
   const renderErrorMessage = (name) =>
@@ -70,23 +70,74 @@ function Login() {
 
   // code for login form
   const renderForm = (
-    <div className="main-container">
-    <div className="form-container">
-      <div className="title">Log In</div>
-      <form onSubmit={handleSubmit}>
-        <div className="input-container">
-          <input type="text" placeholder="Username" name="uname" required />
-          {renderErrorMessage("uname")}
+    <div className="relative">
+      <div className="form-container">
+        <div className="title">Log In</div>
+        <form onSubmit={handleSubmit}>
+          <div className="input-container">
+            <input type="text" placeholder="Username" name="uname" required />
+            {renderErrorMessage("uname")}
+          </div>
+          <div className="input-container">
+            <input
+              type="password"
+              placeholder="Password"
+              name="pass"
+              required
+            />
+            {renderErrorMessage("pass")}
+          </div>
+          <div className="button-container">
+            <button
+              type="submit"
+              value="Submit"
+              className="btn btn-info btn-lg"
+            >
+              GO
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div className="newuser-container">
+        <div className="title">Create Account</div>
+        <div className="input-group">
+          <span className="input-group-text" id="basic-addon1">
+            First & Last Name
+          </span>
+          <input type="text" className="form-control" />
         </div>
-        <div className="input-container">
-          <input type="password" placeholder="Password" name="pass" required />
-          {renderErrorMessage("pass")}
+
+        <div className="input-group">
+          <span className="input-group-text" id="basic-addon1">
+            Username
+          </span>
+          <input type="text" className="form-control" />
         </div>
-        <div className="button-container">
-        <button type="submit" value="Submit" className="btn btn-info btn-lg">Submit</button>
+
+        <div className="input-group">
+          <span className="input-group-text" id="basic-addon2">
+            Email
+          </span>
+          <input type="text" className="form-control" />
         </div>
-      </form>
-    </div>
+
+        <div className="input-group">
+          <span className="input-group-text" id="basic-addon3">
+            Password
+          </span>
+          <input type="password" className="form-control" id="basic-addon3" />
+        </div>
+        <div className="button2-container">
+            <button
+              type="submit"
+              value="Submit"
+              className="btn btn-info btn-lg"
+            >
+              Submit
+            </button>
+          </div>
+      </div>
     </div>
   );
 
