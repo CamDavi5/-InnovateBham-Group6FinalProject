@@ -251,10 +251,6 @@ h6 {
   border-radius: 5px 0 0 5px;
 }
 
-/* .row  {
-margin-top: 0px;
-} */
-
 
 .bg-c-lite-green {
   background: linear-gradient(to right, #6467fd, #1c0080);
@@ -265,9 +261,7 @@ margin-top: 0px;
   border-radius: 5px 0 0 5px;
 }
 
-/* .card-block {
-  padding: 1.25rem;
-} */
+
 
 p.card-block  {
   line-height: 25px
@@ -282,7 +276,7 @@ p.card  {
 }
 
 .b-b-default {
-  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
 }
 
 

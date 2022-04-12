@@ -90,7 +90,7 @@ const Profile = () => {
                   </div>
                   <div className="col-sm-8">
                     <div className="card-block">
-                      <h6 className="m-b-20 p-b-5 b-b-default f-w-600">
+                      <h6 className="b-b-default f-w-600">
                         Information
                       </h6>
                       <div className="row">
@@ -124,34 +124,28 @@ const Profile = () => {
             </div>
           </div>
           <div>
-        <h2 className="mt-3 text-center">Saved Items</h2>
-        <div class="card text-center w-50 mx-auto">
-          <div class="card-header">Featured</div>
-          <div>
-            <img
-              class="card-img-top mw-50"
-              src={savedImage}
-              alt="Card image cap"
-            ></img>
+            <h2 className="mt-3 text-center">Saved Items</h2>
+            <div class="card text-center w-50 mx-auto">
+              <div class="card-header">Featured</div>
+              <div>
+                <img
+                  class="card-img-top mw-50"
+                  src={savedImage}
+                  alt="Card image cap"
+                ></img>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{savedTitle}</h5>
+                <p class="card-text">Hazard: {savedHazard}</p>
+                <a href={savedLink} class="btn btn-primary">
+                  Learn More
+                </a>
+              </div>
+              <div class="card-footer text-muted">2 days ago</div>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">{savedTitle}</h5>
-            <p class="card-text">Hazard: {savedHazard}</p>
-            <a href={savedLink} class="btn btn-primary">
-              Learn More
-            </a>
-          </div>
-          <div class="card-footer text-muted">2 days ago</div>
         </div>
       </div>
-
-
-
-
-
-        </div>
-      </div>
-    
     </>
   );
 };
