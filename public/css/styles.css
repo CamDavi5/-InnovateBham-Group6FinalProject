@@ -98,7 +98,7 @@ li{
   
   .tabs {
     padding-right: 30px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .login-tab {
@@ -184,7 +184,8 @@ li{
 
 .footer-dark {
   display: inline-block;
-  margin-top: 615px;
+  padding-top: 20px;
+  margin-top: 617px;
   color:#f0f9ff;
   background-color:#282d32;
   width: 100%;
@@ -212,12 +213,17 @@ li{
   display: block;
   padding-right: 20px;
 }
-/* .footer-dark ul Link {
-  display: flex;
-  color:inherit;
-  text-decoration:none;
-  opacity:0.6;
-} */
+
+
+.footer-link {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-link2 {
+  text-decoration: none;
+  font-size: 20px;
+}
 
 .footer-link:hover {
   color: white;
@@ -389,6 +395,11 @@ h1.team-title {
 
 /* Contact us page */
 
+.btn-container {
+  margin-top:450px;
+  margin-left: 590px;
+}
+
 .words {
   margin-top: 10px;
 }
@@ -421,7 +432,7 @@ span:hover {
   border-radius: 20%;
   padding: 20px;
   margin-left: 480px;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 
@@ -475,7 +486,7 @@ span:hover {
 
 
 /*Nathan Item Details*/
-/* .dets-container {
+ .dets-container {
   position: fixed;
   background-image: url("../assets/catebg.gif");
   background-size: cover; 
@@ -545,4 +556,3 @@ span:hover {
   left: 1010px;
 }
 
- */

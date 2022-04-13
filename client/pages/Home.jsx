@@ -10,7 +10,7 @@ function Home() {
           <div className="container">
             <div className="row">
               <div className="col-sm-6 col-md-3 item">
-                <h3>Services</h3>
+                <h5>Services</h5>
                 <ul>
                   <li>
                     <Link to="/Login" className="footer-link">Vehicle Parts</Link>
@@ -21,7 +21,7 @@ function Home() {
                 </ul>
               </div>
               <div className="col-sm-6 col-md-3 item">
-                <h3>About</h3>
+                <h5>About</h5>
                 <ul>
                   <li>
                     <Link to="/Contactus" className="footer-link2">Contact Us</Link>
@@ -32,7 +32,7 @@ function Home() {
                 </ul>
               </div>
               <div className="col-md-6 item text">
-                <h3>Recall.it</h3>
+                <h5>Recall.it</h5>
                 <p>
                   Discover any recalled items that you might have and replace them quick and easy!
                 </p>
