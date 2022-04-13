@@ -8,7 +8,7 @@ function Categories() {
         <div className="row1">
           <div className="col-6 text-center">
             <div className="card">
-              <img src="../assets/carphoto.webp" className="card-img-top2"></img>
+              <img src="../assets/fordtrucks.jpg" className="card-img-top2"></img>
               <div className="card-body">
                 <h5 className="card-title">Ford Vehicles</h5>
                 <p className="card-text">
@@ -42,7 +42,7 @@ function Categories() {
               <div className="card-body">
                 <h5 className="card-title">Honda Vehicles</h5>
                 <p className="card-text">
-                Find Mercedes Recalled Parts
+                Find Honda Recalled Parts
                 </p>
                 <Link to="/Categories/Honda" className="btn btn-outline-danger">
                   More Info

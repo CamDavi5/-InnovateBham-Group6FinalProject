@@ -63,6 +63,24 @@ const Details = () => {
           <div className="maindets-container">
             <div className="detail-container">
               <div>
+        
+                <button
+                    id="btn"
+                    className="btn btn-outline-dark"
+                    onClick={() => navigateBack()}
+                  >
+                    Go Back
+                  </button>
+                <Link
+                  id="savedbtn"
+                  to="/Profile/3"
+                  type="submit"
+                  value="Submit"
+                  className="btn btn-outline-danger "
+                >
+                  Save Item
+                </Link>
+            
                 <div id="detailCard" className="jumbotron">
                   <img
                     className="rounded mx-auto d-block"
@@ -78,13 +96,6 @@ const Details = () => {
                     Recall Date:{" "}
                     {itemDetails.length > 0 && itemDetails[0].RecallDate}
                   </p>
-                  <button
-                    id="btn"
-                    className="btn btn-outline-light"
-                    onClick={() => navigateBack()}
-                  >
-                    Go Back
-                  </button>
                 </div>
               </div>
             </div>
@@ -108,18 +119,6 @@ const Details = () => {
                 <p className="lead" />
               </div>
             </div>
-            <div className="savedetail-container">
-              <div id="savedbtn">
-                <Link
-                  to="/Profile/3"
-                  type="submit"
-                  value="Submit"
-                  className="btn btn-outline-danger btn-xlg"
-                >
-                  Save Item
-                </Link>
-              </div>
-            </div>
           </div>
         </>
       )}
@@ -129,6 +128,22 @@ const Details = () => {
           <div className="maindets-container">
             <div className="detail-container">
               <div>
+              <button
+                    id="btn"
+                    className="btn btn-outline-dark"
+                    onClick={() => navigateBack()}
+                  >
+                    Go Back
+                  </button>
+                <Link
+                  id="savedbtn"
+                  to="/Profile/3"
+                  type="submit"
+                  value="Submit"
+                  className="btn btn-outline-danger "
+                >
+                  Save Item
+                </Link>
                 <div id="detailCard" className="jumbotron">
                   <img
                     className="rounded mx-auto d-block"
@@ -170,18 +185,7 @@ const Details = () => {
                 <p className="lead" />
               </div>
             </div>
-            <div className="savedetail-container">
-              <div id="savedbtn">
-                <Link
-                  to="/Profile/3"
-                  type="submit"
-                  value="Submit"
-                  className="btn btn-outline-danger btn-xlg"
-                >
-                  Save Item
-                </Link>
-              </div>
-            </div>
+      
           </div>
         </>
       )}
@@ -191,6 +195,22 @@ const Details = () => {
           <div className="maindets-container">
             <div className="detail-container">
               <div>
+              <button
+                    id="btn"
+                    className="btn btn-outline-dark"
+                    onClick={() => navigateBack()}
+                  >
+                    Go Back
+                  </button>
+                <Link
+                  id="savedbtn"
+                  to="/Profile/3"
+                  type="submit"
+                  value="Submit"
+                  className="btn btn-outline-danger "
+                >
+                  Save Item
+                </Link>
                 <div id="detailCard" className="jumbotron">
                   <img
                     className="rounded mx-auto d-block"
@@ -232,18 +252,6 @@ const Details = () => {
                 <p className="lead" />
               </div>
             </div>
-            <div className="savedetail-container">
-              <div id="savedbtn">
-                <Link
-                  to="/Profile/3"
-                  type="submit"
-                  value="Submit"
-                  className="btn btn-outline-danger btn-xlg"
-                >
-                  Save Item
-                </Link>
-              </div>
-            </div>
           </div>
         </>
       )}
@@ -253,6 +261,22 @@ const Details = () => {
           <div className="maindets-container">
             <div className="detail-container">
               <div>
+              <button
+                    id="btn"
+                    className="btn btn-outline-dark"
+                    onClick={() => navigateBack()}
+                  >
+                    Go Back
+                  </button>
+                <Link
+                  id="savedbtn"
+                  to="/Profile/3"
+                  type="submit"
+                  value="Submit"
+                  className="btn btn-outline-danger "
+                >
+                  Save Item
+                </Link>
                 <div id="detailCard" className="jumbotron">
                   <img
                     className="rounded2 mx-auto d-block"
@@ -294,18 +318,7 @@ const Details = () => {
                 <p className="lead" />
               </div>
             </div>
-            <div className="savedetail-container">
-              <div id="savedbtn">
-                <Link
-                  to="/Profile/3"
-                  type="submit"
-                  value="Submit"
-                  className="btn btn-outline-danger btn-xlg"
-                >
-                  Save Item
-                </Link>
-              </div>
-            </div>
+          
           </div>
         </>
       )}

@@ -355,6 +355,7 @@ padding-top: 75px;
   border-radius: 5px
 }
 
+
 .b-b-default {
   padding-left: 50px;
   text-align: center;
@@ -544,15 +545,14 @@ span:hover {
   padding-left: 50px;
 }
 
-.savedetail-container {
+/* .savedetail-container {
   display: flex;
   padding-top: 100px;
   padding-left: 50px;
-}
+} */
 
 #savedbtn {
-  margin-left: 320px;
-  margin-bottom: 50px;
+  margin-left: 529px;
 }
 
 
@@ -586,7 +586,7 @@ span:hover {
 }
 
 #btn {
-margin-left: 550px;
+margin-left: 0px;
 margin-bottom: 10px;;
 }
 

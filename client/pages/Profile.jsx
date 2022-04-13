@@ -132,7 +132,7 @@ const Profile = () => {
               <div className="card-body">
                 <h4 className="card-title">{savedTitle}</h4>
                 <p className="card-text">Hazard: {savedHazard}</p>
-                <a href={savedLink} target="_blank" className="btn btn-primary">
+                <a href={savedLink} target="_blank" className="btn btn-success">
                   Learn More
                 </a>
               </div>
