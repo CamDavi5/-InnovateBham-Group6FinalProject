@@ -246,7 +246,7 @@ li{
   margin-right: 175px;
   margin-bottom: 100px;
   width: 600px;
-  height: 300px;
+  height: 450px; /* original 300 px new */ 
 }
 
 .f-w-400 {

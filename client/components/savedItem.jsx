@@ -8,6 +8,7 @@ const savedItemCard = ({savedImage,savedTitle, savedHazard, savedLink}) =>{
 return (
 
 <>
+<row class="class">
 <div class="card text-center w-50  mx-auto" >
             <div class="card-header">
               Featured
@@ -74,14 +75,14 @@ return (
               </EmailShareButton>
               </segment>
              </container>
-              </div>
+              </div> 
                 </div>
-            </div>
+            </div> 
             <div class="card-footer text-muted">
               2 days ago
             </div>
           </div>
-
+          </row>
 </>
 )
 }
