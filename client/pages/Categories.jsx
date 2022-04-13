@@ -56,7 +56,7 @@ function Categories() {
               <div className="card-body">
                 <h5 className="card-title">Home Appliances & Everyday Items</h5>
                 <p className="card-text">
-                  Find Recalled Home Appliances & Everday Items
+                  Find Recalled Home Appliances & Everyday Items
                 </p>
                 <Link to="/Categories/Appliances" className="btn btn-outline-danger">
                   More Info
