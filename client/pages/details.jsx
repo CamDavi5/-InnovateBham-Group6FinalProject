@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Details = () => {
-    const [itemDetails, setItemDetails] = useState([]);
-    const [vehicleDetails, setVehicleDetails] = useState([]);
-    const [loadingBool, setLoadingBool] = useState(false);
 
-    const { typeofcat, itemid } = useParams();
-    const navigate = useNavigate();
+  const [itemDetails, setItemDetails] = useState([]);
+  const [vehicleDetails, setVehicleDetails] = useState([]);
+  const [loadingBool, setLoadingBool] = useState(false);
+
+
+  const { typeofcat, itemid } = useParams();
+  const navigate = useNavigate();
 
     useEffect(() => {
         if (typeofcat == 'Appliances') {
@@ -48,8 +50,9 @@ const Details = () => {
         navigate(-1);
     }
 
-    return (
-        <>
+
+  return (
+    <>
             {loadingBool == false &&
                 <h1>Sorry, currently loading</h1>
             }
@@ -209,8 +212,7 @@ const Details = () => {
                 </>
             }
         </>
-
-    );
-}
+  );
+};
 
 export default Details;
