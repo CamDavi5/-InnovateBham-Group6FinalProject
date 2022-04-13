@@ -5,6 +5,7 @@ const router = express.Router();
 import saveditemsRouter from "./saveditems";
 import suggestRouter from "./suggest";
 import userRouter from "./users";
+import test from './ihatecors'
 
 //localhost:3000/api/saveditems
 router.use("/saveditems", saveditemsRouter);
@@ -12,5 +13,6 @@ router.use("/saveditems", saveditemsRouter);
 router.use("/suggestions", suggestRouter);
 //localhost:3000/api/user
 router.use("/user", userRouter);
+router.use('/ahh', test)
 
 export default router;
