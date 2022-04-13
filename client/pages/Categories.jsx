@@ -1,33 +1,45 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-
-function Categories () {
+function Categories() {
   return (
-      <main style={{ padding: "1rem 0" }}>
-        <h2>Categories</h2>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12 col-md-6">
-              Cars
-              <img src="../assets/car-1.jpg"className="image"></img>
-            </div>
-            <div className="col-sm-12 col-md-6">
-              Household appliances
-              <img src="../assets/car-1.jpg" className="image"></img>
+    <>
+      <div className="cat-container">
+        <div className="row">
+          <div className="col-6 text-center">
+            <div className="card">
+              <img src="../assets/carphoto.webp" className="card-img-top2"></img>
+              <div className="card-body">
+                <h5 className="card-title">Vehicles</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <Link to="/Categories/Appliances" className="btn btn-warning">
+                  Go somewhere
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-sm-12 col-md-6">
-              <img src="../assets/car-1.jpg" className="image"></img>
-            </div>
-            <div className="col-sm-12 col-md-6">
-              Column 4
-              <img src="../assets/car-1.jpg" className="image"></img>
+          <div className="col-6 text-center">
+            <div className="card">
+              <img src="../assets/appphoto.jpg" className="card-img-top2"></img>
+              <div className="card-body">
+                <h5 className="card-title">Home Appliances</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <Link to="/Categories/Appliances" className="btn btn-warning">
+                  Go somewhere
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </main>
-    );
-  }
+      </div>
+    </>
+  );
+}
 
-  export default Categories;
+export default Categories;

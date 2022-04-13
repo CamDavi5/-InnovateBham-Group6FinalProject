@@ -88,32 +88,23 @@ const Profile = () => {
                       <i className=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                     </div>
                   </div>
-                  <div className="col-sm-8">
+                  <div className="col-sm-6">
                     <div className="card-block">
-                      <h6 className="m-b-20 p-b-5 b-b-default f-w-600">
+                      <h6 className="b-b-default f-w-600">
                         Information
                       </h6>
-                      <div className="row">
+                      <div className="profile-row">
                         <div className="col-sm-6">
-                          <p className="m-b-10 f-w-600">Email</p>
+                          <p className="f-w-400">Email</p>
                           <h6 className="text-muted f-w-400">{email}</h6>
-                        </div>
-                        <div className="col-sm-6">
-                          <p className="m-b-10 f-w-600">Password</p>
+                          <p className="f-w-400">Password</p>
                           <h6 className="text-muted f-w-400">
                             {" "}
                             ****************
                           </h6>
-                          {/* <h6 className="text-muted f-w-400"> {password}</h6> */}
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-sm-6">
-                          <p className="m-b-10 f-w-600">Birthday</p>
+                          <p className=" f-w-400">Birthday</p>
                           <h6 className="text-muted f-w-400">{birthdate}</h6>
-                        </div>
-                        <div className="col-sm-6">
-                          <p className="m-b-10 f-w-600">Mobile Number</p>
+                          <p className="text">Mobile Number</p>
                           <h6 className="text-muted f-w-400">888-888-8888</h6>
                         </div>
                       </div>
@@ -123,35 +114,29 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <div>
-        <h2 className="mt-3 text-center">Saved Items</h2>
-        <div class="card text-center w-50 mx-auto">
-          <div class="card-header">Featured</div>
-          <div>
-            <img
-              class="card-img-top mw-50"
-              src={savedImage}
-              alt="Card image cap"
-            ></img>
+          <div className="saveditem-container">
+            <h2 className="mt-3 text-center">Saved Items</h2>
+            <div className="card text-center">
+              <div className="card-header">Featured</div>
+              <div>
+                <img
+                  className="card-img-top"
+                  src={savedImage}
+                  alt="Card image cap"
+                ></img>
+              </div>
+              <div className="card-body">
+                <h5 className="card-title">{savedTitle}</h5>
+                <p className="card-text">Hazard: {savedHazard}</p>
+                <a href={savedLink} className="btn btn-primary">
+                  Learn More
+                </a>
+              </div>
+              <div className="card-footer text-muted">2 days ago</div>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">{savedTitle}</h5>
-            <p class="card-text">Hazard: {savedHazard}</p>
-            <a href={savedLink} class="btn btn-primary">
-              Learn More
-            </a>
-          </div>
-          <div class="card-footer text-muted">2 days ago</div>
         </div>
       </div>
-
-
-
-
-
-        </div>
-      </div>
-    
     </>
   );
 };
