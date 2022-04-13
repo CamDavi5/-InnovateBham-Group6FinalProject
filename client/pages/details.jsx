@@ -57,7 +57,7 @@ const Details = () => {
 
   return (
     <>
-      {loadingBool == false && <h1>Sorry, currently loading</h1>}
+      {loadingBool == false && <h1></h1>}
       {typeofcat == "Appliances" && loadingBool == true && (
         <>
           <div className="maindets-container">
@@ -155,13 +155,7 @@ const Details = () => {
                     Recall Date:{" "}
                     {vehicleDetails[0].results[0].ReportReceivedDate}
                   </p>
-                  <button
-                    id="btn"
-                    className="btn btn-outline-light"
-                    onClick={() => navigateBack()}
-                  >
-                    Go Back
-                  </button>
+            
                 </div>
               </div>
             </div>
@@ -222,13 +216,7 @@ const Details = () => {
                     Recall Date:{" "}
                     {vehicleDetails[0].results[0].ReportReceivedDate}
                   </p>
-                  <button
-                    id="btn"
-                    className="btn btn-outline-light"
-                    onClick={() => navigateBack()}
-                  >
-                    Go Back
-                  </button>
+              
                 </div>
               </div>
             </div>
@@ -288,13 +276,7 @@ const Details = () => {
                     Recall Date:{" "}
                     {vehicleDetails[0].results[0].ReportReceivedDate}
                   </p>
-                  <button
-                    id="btn"
-                    className="btn btn-outline-light"
-                    onClick={() => navigateBack()}
-                  >
-                    Go Back
-                  </button>
+                
                 </div>
               </div>
             </div>
