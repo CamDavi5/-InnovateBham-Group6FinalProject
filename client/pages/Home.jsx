@@ -16,7 +16,7 @@ function Home() {
                     <Link to="/Login" className="footer-link">Vehicle Parts</Link>
                   </li>
                   <li>
-                    <Link to="/Login" className="footer-link">Home Appliances</Link>
+                    <Link to="/Categories/Appliances" className="footer-link">Home Appliances</Link>
                   </li>
                 </ul>
               </div>
