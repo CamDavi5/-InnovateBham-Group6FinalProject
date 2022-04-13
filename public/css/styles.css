@@ -1,9 +1,13 @@
 /* Other S */
 
 * {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Abel', sans-serif;
 }
 
+.image {
+  width: 200px;
+  height: 200px;
+}
 
 div.absolute {
   position: absolute;
@@ -31,13 +35,16 @@ div.relative {
 
 
 
+
+
+
 /*Navbar*/
 
 #login-navlink {
   font-size: 20px;
   text-decoration: none;
   color: rgb(77, 1, 255);
-  font-family: 'Baloo 2', cursive;
+  /* font-family: 'Baloo 2', cursive; */
 }
 
 #login-navlink:hover {
@@ -48,12 +55,12 @@ div.relative {
 }
 
 #navlink {
-  margin-left: 70px;
-  margin-right: 20px;
+  margin-left: 65px;
+  margin-right: 40px;
     font-size: 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-family: 'Baloo 2', cursive;
+    /* font-family: 'Baloo 2', cursive; */
 }
 
 #navlink:hover {
@@ -95,7 +102,7 @@ li{
   }
 
   .login-tab {
-    margin-left: 100px;
+    margin-left: 200px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -177,11 +184,11 @@ li{
 
 .footer-dark {
   display: inline-block;
-  margin-top: 550px;
+  margin-top: 615px;
   color:#f0f9ff;
   background-color:#282d32;
   width: 100%;
-  height: 48%;
+  height: 30%;
 }
 
 .footer-dark h3 {
@@ -203,7 +210,7 @@ li{
 
 .footer-dark li {
   display: block;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 /* .footer-dark ul Link {
   display: flex;
@@ -234,55 +241,80 @@ li{
 
 /* Profile Page */
 
+.saveditem-container {
+  margin-top: 0px;
+  margin-right: 175px;
+  margin-bottom: 100px;
+  width: 600px;
+  height: 300px;
+}
+
+.f-w-400 {
+ padding-right: 20px;
+}
+
+
+
 h6 {
   font-size: 14px
 }
 
+div.page-content {
+  position: absolute;
+  background-image: url("../assets/bg2.gif");
+  background-size: cover; 
+  padding-top: 10px;
+  padding-bottom: 200px;
+  top: 85px;
+
+}
+
+.profile-row {
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  padding-bottom: 100px;
+}
+
 .page-container {
-  padding-top: 60px;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
 }
 
 
 .user-card-full {
   overflow: hidden;
-  margin-top: 100px;;
+  margin-top: 90px;
+  margin-right: 0px;
   padding-top: 0px;
-  width: 100%;
+  width: 500px;
   border-radius: 5px 0 0 5px;
 }
-
-/* .row  {
-margin-top: 0px;
-} */
 
 
 .bg-c-lite-green {
   background: linear-gradient(to right, #6467fd, #1c0080);
 }
 
+/* 
+.pic-container {
+  padding-left: 50px;
+} */
 .user-profile {
-  padding-top: 0;
+  padding-left: 200px;
   border-radius: 5px 0 0 5px;
 }
 
-/* .card-block {
-  padding: 1.25rem;
-} */
-
-p.card-block  {
-  line-height: 25px
-}
-
-p.card  {
-  line-height: 25px
-}
 
 .img-radius {
   border-radius: 5px
 }
 
 .b-b-default {
-  border-bottom: 1px solid #e0e0e0;
+  padding-left: 50px;
+  text-align: center;
 }
 
 
@@ -353,6 +385,8 @@ h1.team-title {
   height: 200px;
 }
 
+
+
 /* Contact us page */
 
 .words {
@@ -391,8 +425,71 @@ span:hover {
 }
 
 
+
+/* Categories */
+
+.card-img-top2 {
+  width: 366px;
+  height: 275px;
+}
+
+
+.cat-container {
+  position: fixed;
+  background-image: url("../assets/catebg.gif");
+  background-size: cover; 
+  margin: 0px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 20px;
+  left: 0px;
+  right: 0px;
+  top: 85px;
+  bottom: 0px;
+}
+
+
+
+/* Appliances page*/
+
+.app-page-container {
+  position: relative;
+  background-image: url("../assets/catebg.gif");
+  background-size: cover; 
+  margin: 0px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 20px;
+  left: 0px;
+  right: 0px;
+  top: 85px;
+  bottom: 0px;
+}
+
+.card-img-top3 {
+  padding-left: 30px;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+
 /*Nathan Item Details*/
-/*.container2 {
+/* .dets-container {
+  position: fixed;
+  background-image: url("../assets/catebg.gif");
+  background-size: cover; 
+  margin: 0px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 20px;
+  left: 0px;
+  right: 0px;
+  top: 85px;
+  bottom: 0px;
+}
+
+.container2 {
   left: 700px;
   bottom: 100px;
   position: absolute;
@@ -417,8 +514,8 @@ span:hover {
   left: 697px;
 }
 #detailCard {
-  margin-bottom: 1em;
-  padding-top: 5px;
+  margin-bottom: 30px;
+  padding-top: 100px;
   padding-bottom: 5px;
   border: 1px solid transparent;
   border-radius: 1em;
@@ -446,23 +543,6 @@ span:hover {
   position: absolute;
   bottom: 725;
   left: 1010px;
-}*/
-
-.image {
-  width: 200px;
-  height: 200px;
 }
 
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ */
