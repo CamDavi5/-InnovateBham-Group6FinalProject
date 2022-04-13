@@ -52,6 +52,7 @@ function Honda() {
     return (
         <>
             {loadingBool == true &&
+             <div className="app-page-container">
                 <div className="row">
                 {hondaArr.results.map((honda) => (
                     <div className="col-sm-4" key={honda.NHTSACampaignNumber}>
@@ -65,6 +66,7 @@ function Honda() {
                         </div>
                     </div>
                 ))}
+                </div>
                 </div>
             }
         </>

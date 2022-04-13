@@ -43,11 +43,12 @@ function Mercedes() {
     return (
         <>
             {loadingBool == true &&
+            <div className="app-page-container">
                 <div className="row">
                 {mercedesArr.results.map((mercedes) => (
                     <div className="col-sm-4" key={mercedes.NHTSACampaignNumber}>
                         <div className="card mt-2">
-                        <img className="card-img-top" src='../assets/mercedes-logo.jpg' alt="Image Unavailable" />
+                        <img className="card-img-top3" src='../assets/merc-logo.png' alt="Image Unavailable" />
                             <div className="card-body">
                                 <h5 className="card-title">{mercedes.Component}</h5>
                                 <p className="card-text">Recall Date: {mercedes.ReportReceivedDate}</p>
@@ -57,6 +58,7 @@ function Mercedes() {
                     </div>
                 ))}
                 </div>
+            </div>
             }
         </>
     );

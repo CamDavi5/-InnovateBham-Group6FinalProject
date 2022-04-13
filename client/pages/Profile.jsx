@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+
+import { FacebookShareButton, TwitterShareButton, WhatsappShareButton, RedditShareButton, TumblrShareButton, EmailShareButton } from "react-share";
+import { FacebookIcon, TwitterIcon, WhatsappIcon, RedditIcon, TumblrIcon, EmailIcon } from "react-share";
+
 
 const Profile = () => {
   let { id } = useParams();
@@ -77,22 +83,20 @@ const Profile = () => {
                       <div>
                         {" "}
                         <img
-                          src="https://img.icons8.com/bubbles/100/000000/user.png"
+                          src='../assets/profilepic.png'
                           className="img-radius"
                           alt="User-Profile-Image"
                         />{" "}
                       </div>
-                      <h6 className="f-w-600">
-                        <br></br>Welcome User <br></br> {username}{" "}
-                      </h6>
+                      <h5 className="f-w-600">
+                        <br></br>Welcome Back!<br></br> {username}{" "}
+                      </h5>
                       <i className=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="card-block">
-                      <h6 className="b-b-default f-w-600">
-                        Information
-                      </h6>
+                      <h6 className="b-b-default f-w-600">Information</h6>
                       <div className="profile-row">
                         <div className="col-sm-6">
                           <p className="f-w-400">Email</p>
@@ -126,11 +130,91 @@ const Profile = () => {
                 ></img>
               </div>
               <div className="card-body">
-                <h5 className="card-title">{savedTitle}</h5>
+                <h4 className="card-title">{savedTitle}</h4>
                 <p className="card-text">Hazard: {savedHazard}</p>
-                <a href={savedLink} className="btn btn-primary">
+                <a href={savedLink} target="_blank" className="btn btn-primary">
                   Learn More
                 </a>
+              </div>
+              <div>
+                <p>
+                  <Link
+                    className="btn btn-outline-success mt-2"
+                    data-toggle="collapse"
+                    to={"#collapseExample"}
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    Share
+                  </Link>
+                </p>
+                <div className="collapse" id="collapseExample">
+                  <div className="card card-body">
+                    <container>
+                      <segment>
+                        <FacebookShareButton
+                          url={savedLink}
+                          quote={
+                            "Hello, Please look and be aware of this recall.Thanks"
+                          }
+                          hashtag="#Recall"
+                        >
+                          <FacebookIcon
+                            logoFillColor="White"
+                            round={true}
+                          ></FacebookIcon>
+                        </FacebookShareButton>
+
+                        <TwitterShareButton
+                          title={savedTitle}
+                          url={savedLink}
+                          hashtags="#Recall"
+                        >
+                          <TwitterIcon
+                            logoFillColor="White"
+                            round={true}
+                          ></TwitterIcon>
+                        </TwitterShareButton>
+
+                        <WhatsappShareButton title={savedTitle} url={savedLink}>
+                          <WhatsappIcon
+                            logoFillColor="White"
+                            round={true}
+                          ></WhatsappIcon>
+                        </WhatsappShareButton>
+
+                        <RedditShareButton title={savedTitle} url={savedLink}>
+                          <RedditIcon
+                            logoFillColor="White"
+                            round={true}
+                          ></RedditIcon>
+                        </RedditShareButton>
+
+                        <TumblrShareButton
+                          title={savedTitle}
+                          url={savedLink}
+                          tag="Recall"
+                        >
+                          <TumblrIcon
+                            logoFillColor="White"
+                            round={true}
+                          ></TumblrIcon>
+                        </TumblrShareButton>
+
+                        <EmailShareButton
+                          subject={`Please View this recall : savedTitle`}
+                          body={savedLink}
+                        >
+                          <EmailIcon
+                            logoFillColor="White"
+                            round={true}
+                          ></EmailIcon>
+                        </EmailShareButton>
+                      </segment>
+                    </container>
+                  </div>
+                </div>
               </div>
               <div className="card-footer text-muted">2 days ago</div>
             </div>

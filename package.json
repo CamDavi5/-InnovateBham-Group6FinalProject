@@ -36,6 +36,7 @@
     "react-icons": "^4.3.1",
     "react-mail-icon": "^1.0.6",
     "react-router-dom": "^6.3.0",
+    "react-share": "^4.4.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.44.1",
     "webpack-node-externals": "^1.7.2"
