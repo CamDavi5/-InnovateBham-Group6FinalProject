@@ -138,16 +138,16 @@ const Profile = () => {
               </div>
               <div>
                 <p>
-                  <Link
+                  <a
                     className="btn btn-outline-success mt-2"
                     data-toggle="collapse"
-                    to={"#collapseExample"}
+                    href="#collapseExample"
                     role="button"
                     aria-expanded="false"
                     aria-controls="collapseExample"
                   >
                     Share
-                  </Link>
+                  </a>
                 </p>
                 <div className="collapse" id="collapseExample">
                   <div className="card card-body">

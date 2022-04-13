@@ -13,10 +13,13 @@ function Home() {
                 <h5>Services</h5>
                 <ul>
                   <li>
-                    <Link to="/Login" className="footer-link">Vehicle Parts</Link>
+                    <Link to="/Categories/Ford" className="footer-link">Ford</Link>
                   </li>
                   <li>
-                    <Link to="/Categories/Appliances" className="footer-link">Home Appliances</Link>
+                    <Link to="/Categories/Honda" className="footer-link">Honda</Link>
+                  </li>
+                  <li>
+                    <Link to="/Categories/Mercedes" className="footer-link">Mercedes</Link>
                   </li>
                 </ul>
               </div>
