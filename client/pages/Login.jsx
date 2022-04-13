@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Login() {
   const [errorMessages, setErrorMessages] = useState({});
@@ -88,13 +89,14 @@ function Login() {
             {renderErrorMessage("pass")}
           </div>
           <div className="button-container">
-            <button
+            <Link
+            to="/Profile/3"
               type="submit"
               value="Submit"
               className="btn btn-info btn-lg"
             >
               GO
-            </button>
+            </Link>
           </div>
         </form>
       </div>

@@ -34,11 +34,12 @@ function Ford() {
     return (
         <>
             {loadingBool == true &&
+             <div className="app-page-container">
                 <div className="row">
                 {fordArr.results.map((ford) => (
                     <div className="col-sm-4" key={ford.NHTSACampaignNumber}>
                         <div className="card mt-2">
-                        <img className="card-img-top" src='../assets/ford-logo.png' alt="Image Unavailable" />
+                        <img className="card-img-top3" src='../assets/fordlogo.webp' alt="Image Unavailable" />
                             <div className="card-body">
                                 <h5 className="card-title">{ford.Component}</h5>
                                 <p className="card-text">Recall Date: {ford.ReportReceivedDate}</p>
@@ -47,6 +48,7 @@ function Ford() {
                         </div>
                     </div>
                 ))}
+                </div>
                 </div>
             }
         </>

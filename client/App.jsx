@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar.jsx"
+import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
 import Profile from "./pages/Profile.jsx";
 import Login from "./pages/Login.jsx";
 import Categories from "./pages/Categories.jsx";
 import Details from "./pages/details.jsx";
 import Team from "./pages/Team.jsx";
-import Appliances from "./pages/Appliances.jsx"
+import Appliances from "./pages/Appliances.jsx";
 import Contactus from "./pages/Contactus.jsx";
 import Ford from "./pages/Ford.jsx"
 import Honda from "./pages/Honda.jsx"
